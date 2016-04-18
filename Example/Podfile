@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'IBFlurry_Example', :exclusive => true do
+  pod 'IBFlurry', :path => '../'
+end
+
+target 'IBFlurry_Tests', :exclusive => true do
+  pod 'IBFlurry', :path => '../'
+
+  
+end
