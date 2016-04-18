@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "IBFlurry"
   s.version          = "0.1.0"
-  s.summary          = "A short description of IBFlurry."
+  s.summary          = "Flurry in Interface builder."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,16 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+Tag views in Interface build to log Flurry events.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/IBFlurry"
+  s.homepage         = "https://github.com/darkcl/IBFlurry"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Yeung Yiu Hung" => "yeungyiuhung@cherrypicks.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/IBFlurry.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Yeung Yiu Hung" => "hkclex@gmail.com" }
+  s.source           = { :git => "https://github.com/darkcl/IBFlurry.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/darkcl_dev'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'IBFlurry/Classes/**/*'
   s.resource_bundles = {
@@ -36,5 +37,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Flurry-iOS-SDK/FlurrySDK', '~> 7.1.0'
 end

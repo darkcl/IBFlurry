@@ -64,19 +64,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>429C74C88CBC0094F31B8733</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_IBFlurry_Example.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>447544B3A9B920A327D3D40B</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -106,6 +93,13 @@ fi
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
+		</dict>
+		<key>4E4F5D5FE93EEA795DA4C137</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A0005A37895B35B01D3103EE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>6003F581195388D10070C39A</key>
 		<dict>
@@ -211,7 +205,7 @@ fi
 				<string>6003F590195388D20070C39A</string>
 				<string>6003F592195388D20070C39A</string>
 				<string>6003F58E195388D20070C39A</string>
-				<string>73E652BD3FA560C6FE8E8CDB</string>
+				<string>8C12DCE7904264FA78212209</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -296,8 +290,8 @@ fi
 				<string>6003F58F195388D20070C39A</string>
 				<string>6003F591195388D20070C39A</string>
 				<string>6003F5AF195388D20070C39A</string>
-				<string>429C74C88CBC0094F31B8733</string>
-				<string>9D0DC0202EE8C0DA126C5E92</string>
+				<string>F3785B98749ABFB41E68FCC3</string>
+				<string>A0005A37895B35B01D3103EE</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -574,7 +568,7 @@ fi
 				<string>6003F5B0195388D20070C39A</string>
 				<string>6003F5B2195388D20070C39A</string>
 				<string>6003F5B1195388D20070C39A</string>
-				<string>D80C1C785CDDE38C033B1808</string>
+				<string>4E4F5D5FE93EEA795DA4C137</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -1134,13 +1128,6 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>73E652BD3FA560C6FE8E8CDB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>429C74C88CBC0094F31B8733</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>7A15E88880808FBDA8596F21</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1191,6 +1178,13 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>8C12DCE7904264FA78212209</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3785B98749ABFB41E68FCC3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>92C3548DF0FE6835C1090253</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1206,16 +1200,16 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9D0DC0202EE8C0DA126C5E92</key>
+		<key>A0005A37895B35B01D3103EE</key>
 		<dict>
 			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
+			<string>archive.ar</string>
 			<key>includeInIndex</key>
 			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>path</key>
-			<string>Pods_IBFlurry_Tests.framework</string>
+			<string>libPods-IBFlurry_Tests.a</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
@@ -1274,13 +1268,6 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D80C1C785CDDE38C033B1808</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9D0DC0202EE8C0DA126C5E92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>E1C42AFF199D8D1981DF1EA3</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -1310,6 +1297,19 @@ fi
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
+		</dict>
+		<key>F3785B98749ABFB41E68FCC3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-IBFlurry_Example.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>F810D4E23F2EA3CA57501715</key>
 		<dict>
