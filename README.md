@@ -11,18 +11,24 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+XCode 6
+
+## Limitation
+
+Only can log one action for one target in one UIControlEvents
+
 ## Installation
 
 IBFlurry is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "IBFlurry"
+pod 'IBFlurry'
 ```
 
 ## Author
 
-Yeung Yiu Hung, yeungyiuhung@cherrypicks.com
+Yeung Yiu Hung, hkclex@gmail.com
 
 ## License
 
