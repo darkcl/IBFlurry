@@ -22,6 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enableLog" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="touchUpInsideKey" value="Tap A Button"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" destination="whP-gf-Uak" eventType="touchUpInside" id="NTB-SV-12G"/>

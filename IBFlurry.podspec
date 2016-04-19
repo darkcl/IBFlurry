@@ -37,5 +37,5 @@ Tag views in Interface build to log Flurry events.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'Flurry-iOS-SDK/FlurrySDK', '~> 7.1.0'
+  s.dependency 'Flurry-iOS-SDK/FlurrySDK', '~> 7.6.0'
 end

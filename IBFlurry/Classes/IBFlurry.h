@@ -6,6 +6,7 @@
 //
 //
 
+#import <Flurry.h>
+
 #import "UIViewController+IBFlurry.h"
 #import "UIControl+IBFlurry.h"
-#import "UIButton+IBFlurry.h"

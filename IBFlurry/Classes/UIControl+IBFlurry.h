@@ -12,8 +12,34 @@
 
 @property IBInspectable BOOL enableLog;
 
-@property (nonatomic, strong) IBInspectable NSString *eventKey;
+@property (nonatomic, strong) IBInspectable NSString *touchDownKey;
+
+@property (nonatomic, strong) IBInspectable NSString *touchDownRepeatKey;
+
+@property (nonatomic, strong) IBInspectable NSString *touchDragInsideKey;
+
+@property (nonatomic, strong) IBInspectable NSString *touchDragOutsideKey;
+
+@property (nonatomic, strong) IBInspectable NSString *touchDragEnterKey;
+
+@property (nonatomic, strong) IBInspectable NSString *touchDragExitKey;
+
+@property (nonatomic, strong) IBInspectable NSString *touchUpInsideKey;
+
+@property (nonatomic, strong) IBInspectable NSString *touchUpOutsideKey;
+
+@property (nonatomic, strong) IBInspectable NSString *touchCancelKey;
+
+@property (nonatomic, strong) IBInspectable NSString *valueChangeKey;
+
+@property (nonatomic, strong) IBInspectable NSString *editingBeginKey;
+
+@property (nonatomic, strong) IBInspectable NSString *editingChangedKey;
+
+@property (nonatomic, strong) IBInspectable NSString *editingEndKey;
 
 @property (nonatomic, strong) NSDictionary *flurryEventsDict;
+
+@property (nonatomic, strong) NSDictionary *actionsDict;
 
 @end
