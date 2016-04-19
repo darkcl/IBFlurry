@@ -15,6 +15,7 @@ static void * IBFlurryUIControlEnableLogPropertKey = &IBFlurryUIControlEnableLog
 static void * IBFlurryUIControlEventKeyPropertKey = &IBFlurryUIControlEventKeyPropertKey;
 static void * IBFlurryUIControlFlurryKeyDict = &IBFlurryUIControlFlurryKeyDict;
 static void * IBFlurryUIControlActionsDict = &IBFlurryUIControlActionsDict;
+static void * IBFlurryUIControlFlurryParam = &IBFlurryUIControlFlurryParam;
 
 @implementation UIControl (IBFlurry)
 
@@ -51,6 +52,14 @@ static void * IBFlurryUIControlActionsDict = &IBFlurryUIControlActionsDict;
         [self swizzleMethod:@selector(sendActionsForControlEvents:)
                    toMethod:@selector(ibflurry_sendActionsForControlEvents:)];
     });
+}
+
+- (void)setFlurryParam:(NSDictionary *)flurryParam{
+    objc_setAssociatedObject(self, IBFlurryUIControlFlurryParam, flurryParam , OBJC_ASSOCIATION_RETAIN);
+}
+
+- (NSDictionary *)flurryParam{
+    return objc_getAssociatedObject(self, IBFlurryUIControlFlurryParam);
 }
 
 - (void)setActionsDict:(NSDictionary *)actionsDict{
@@ -273,6 +282,7 @@ static void * IBFlurryUIControlActionsDict = &IBFlurryUIControlActionsDict;
 
 - (void)ibflurry_sendAction:(SEL)action to:(nullable id)target forEvent:(nullable UIEvent *)event{
     NSLog(@"Custom sendAction");
+    [self ibflurry_sendAction:action to:target forEvent:event];
     
     if (self.enableLog) {
         NSLog(@"Enable Flurry log");
@@ -283,13 +293,17 @@ static void * IBFlurryUIControlActionsDict = &IBFlurryUIControlActionsDict;
                 [actionForEvent[@"Action"] isEqualToString:NSStringFromSelector(action)] &&
                 self.flurryEventsDict[key] != nil) {
                 NSLog(@"Flurry log: %@", self.flurryEventsDict[key]);
-                [Flurry logEvent:self.flurryEventsDict[key]];
+                
+                if (self.flurryParam != nil) {
+                    [Flurry logEvent:self.flurryEventsDict[key] withParameters:self.flurryParam];
+                }else{
+                    [Flurry logEvent:self.flurryEventsDict[key]];
+                }
+                
             }
         }
         
     }
-    
-    [self ibflurry_sendAction:action to:target forEvent:event];
 }
 
 - (void)ibflurry_addTarget:(nullable id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents{

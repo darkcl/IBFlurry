@@ -42,4 +42,6 @@
 
 @property (nonatomic, strong) NSDictionary *actionsDict;
 
+@property (nonatomic, strong) NSDictionary *flurryParam;
+
 @end

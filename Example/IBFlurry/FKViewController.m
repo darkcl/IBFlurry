@@ -27,7 +27,10 @@
 }
 
 - (IBAction)buttonPressed:(id)sender {
+    NSLog(@"Button Pressed");
     
+    UIButton *aButton = (UIButton *)sender;
+    aButton.flurryParam = @{@"testing": @"param"};
 }
 
 @end
