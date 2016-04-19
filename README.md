@@ -17,6 +17,12 @@ XCode 6
 
 Only can log one action for one target in one UIControlEvents
 
+## TODOs
+
+- [x] Support UIControls
+- [ ] Support UITableViews
+- [ ] Support UICollectionViews
+
 ## Installation
 
 IBFlurry is available through [CocoaPods](http://cocoapods.org). To install

@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (IBFlurry)
+@interface UIViewController (IBFlurry) <UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property IBInspectable BOOL *enableTimedLog;
 
 @property (nonatomic, strong) IBInspectable NSString *eventKey;
+
+@property (nonatomic, strong) NSDictionary *tableViewFlurryParams;
 
 @end

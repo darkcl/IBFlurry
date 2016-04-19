@@ -8,5 +8,6 @@
 
 #import <Flurry.h>
 
+#import "UITableViewCell+IBFlurry.h"
 #import "UIViewController+IBFlurry.h"
 #import "UIControl+IBFlurry.h"
